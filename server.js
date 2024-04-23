@@ -15,6 +15,7 @@ mongoose
 
 //Routes
 const movieRouter = require("./routes/movie");
+app.use(express.json())
 app.use("/movies", movieRouter);
 app.use("/shows", require("./routes/show"));
 
